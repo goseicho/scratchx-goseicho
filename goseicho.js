@@ -1,6 +1,6 @@
 (function(ext) {
     // shutdown時に呼ばれる
-     ext._shutdown = function() {};
+    ext._shutdown = function() {};
 
     // statusを返してやる。デバイスとつながってない時とかここで色々返せる。
     ext._getStatus = function() {
@@ -9,19 +9,19 @@
 
     // blockが呼び出された時に呼ばれる関数を登録する。
     // 下にあるdescriptorでブロックと関数のひも付けを行っている。
-    ext.do_domething = function(str) {
+    ext.goseicho = function(str) {
     };
 
     // ブロックと関数のひも付け
     var descriptor = {
         blocks: [
-            [' ', 'do_something %s', 'do_something', 'sample text'],
-            [' ', 'GOSEICHO', 'do_something'],
+            [' ', 'GOSEICHO', 'goseicho'],
+            [' ', 'GOSEICHO', 'goseicho'],
        
         ]
     };
 
     // 最後にExtensionを登録する
-    ScratchExtensions.register('Simple extension', descriptor, ext);
+    ScratchExtensions.register('GOSEICHO', descriptor, ext);
 })({});
 
