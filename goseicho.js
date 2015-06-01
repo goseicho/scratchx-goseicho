@@ -1,6 +1,6 @@
 (function(ext) {
     // shutdown時に呼ばれる
-    ext._shutdown = function() {};
+     ext._shutdown = function() {};
 
     // statusを返してやる。デバイスとつながってない時とかここで色々返せる。
     ext._getStatus = function() {
