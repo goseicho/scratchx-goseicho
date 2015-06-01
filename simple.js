@@ -16,6 +16,8 @@
     var descriptor = {
         blocks: [
             [' ', 'do_something %s', 'do_something', 'sample text'],
+            [' ', 'GOSEICHO', 'do_something'],
+       
         ]
     };
 
