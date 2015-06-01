@@ -16,8 +16,6 @@
     var descriptor = {
         blocks: [
             [' ', 'GOSEICHO', 'goseicho'],
-            [' ', 'GOSEICHO', 'goseicho'],
-       
         ]
     };
 
