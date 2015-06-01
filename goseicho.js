@@ -10,7 +10,7 @@
     // blockが呼び出された時に呼ばれる関数を登録する。
     // 下にあるdescriptorでブロックと関数のひも付けを行っている。
     ext.goseicho = function(str) {
-        loadsound("http://goseicho.com/goseicho1.mp3")
+        loadSound("http://goseicho.com/goseicho1.mp3")
     };
 
    var buffer = null;
