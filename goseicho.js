@@ -15,9 +15,7 @@
     // ブロックと関数のひも付け
     var descriptor = {
         blocks: [
-            [' ', 'GOSEICHO', 'goseicho'],
-            [' ', 'GOSEICHO', 'goseicho'],
-       
+            [' ', 'GOSEICHO', 'goseicho','goseicho'],
         ]
     };
 
