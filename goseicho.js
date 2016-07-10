@@ -21,6 +21,9 @@
             [' ', 'GOSEICHO', 'goseicho','goseicho'],
 =======
             [' ', 'GOSEICHO', 'goseicho'],
+<<<<<<< HEAD
+>>>>>>> gh-pages
+=======
 >>>>>>> gh-pages
         ]
     };
