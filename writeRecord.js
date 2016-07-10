@@ -9,26 +9,21 @@
 
     // blockが呼び出された時に呼ばれる関数を登録する。
     // 下にあるdescriptorでブロックと関数のひも付けを行っている。
-    ext.goseicho = function(str) {
-       var audio =  new Audio("http://goseicho.com/goseicho1.mp3");
-       audio.play();
+    ext.send = function(str) {
+      var req = new XMLHttpRequest();
+      if ('open' in req) {  // req.open の存在チェック
+        req.open ('GET', 'http://133.2.37.247/scratchX/write.cgi?text=' + str , true);
+      } else {
+      }
     };
 
     // ブロックと関数のひも付け
     var descriptor = {
         blocks: [
-<<<<<<< HEAD
-            [' ', 'GOSEICHO', 'goseicho','goseicho'],
-=======
-            [' ', 'GOSEICHO', 'goseicho'],
-<<<<<<< HEAD
->>>>>>> gh-pages
-=======
->>>>>>> gh-pages
+            [' ', '%s を送る', 'send',''],
         ]
     };
 
     // 最後にExtensionを登録する
-    ScratchExtensions.register('GOSEICHO', descriptor, ext);
+    ScratchExtensions.register('send', descriptor, ext);
 })({});
-
