@@ -17,7 +17,11 @@
     // ブロックと関数のひも付け
     var descriptor = {
         blocks: [
+<<<<<<< HEAD
             [' ', 'GOSEICHO', 'goseicho','goseicho'],
+=======
+            [' ', 'GOSEICHO', 'goseicho'],
+>>>>>>> gh-pages
         ]
     };
 
